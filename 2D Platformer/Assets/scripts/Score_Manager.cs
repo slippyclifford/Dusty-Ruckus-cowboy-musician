@@ -30,9 +30,10 @@ public class Score_Manager : MonoBehaviour
         Score += PointsToAdd; 
     }
 
-    public static void Reset (){
-        
-    }
+    //public static void Reset (){
+
+    //    Score = 0;
+    //}
 
 
 
