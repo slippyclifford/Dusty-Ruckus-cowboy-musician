@@ -5,12 +5,12 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour
 {
 
-    public GameObject currentCheckPoint;
+    public GameObject CurrentCheckPoint;
     private Rigidbody2D Pc;
 
     //particles 
-    public GameObject deathParticle;
-    public GameObject respawnParticle;
+    public GameObject DeathParticle;
+    public GameObject RespawnParticle;
 
     //Respawn Delay
     public float respawnDelay;
@@ -23,27 +23,40 @@ public class LevelManager : MonoBehaviour
 
     // Use this for initialization
 
-    void Start () {
-        player = findObjectOfType<Rigidbody2D>();
+    void Start()
+    {
+        Pc = FindObjectOfType<Rigidbody2D>();
 
     }
-    public void RespawnPc(){
+    public void RespawnPc()
+    {
         StartCoroutine("RespawnPlayerCo");
     }
-    public IEnnumerator RespawnPlayerCo(){
+    public IEnumerator RespawnPlayerCo()
+    {
         //Generate Death Particle
-        Instantiate(deathParticle, Pc.transform.position, pc.transform.rotation);
-                     //Hide Player
-                     Pc.enabled = false;
-        Pc.GetComponent<Renderer> ().enabled = false;
+        Instantiate(DeathParticle, Pc.transform.position, Pc.transform.rotation);
+        //Hide Player
+        //Pc.enabled = false;
+        Pc.GetComponent<Renderer>().enabled = false;
         //Gravity Reset 
         gravityStore = Pc.GetComponent<Rigidbody2D>().gravityScale;
         Pc.GetComponent<Rigidbody2D>().gravityScale = 0f;
-        Pc.Getcomponent <Rigidbody2D> ().velocity = Vector2.zero;
+        Pc.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         //Point Penalty 
-        ScoreManager.AddPoints(-pointPenaltyOnDeath);
+        Score_Manager.AddPoints(-pointPenaltyOnDeath);
         //Debug Message
-        Debug.Log ("Player Respawn")
+        Debug.Log("Player Respawn");
              //Respawn Delay
              yield return new WaitForSeconds(respawnDelay);
+        //Gravity Restore
+        Pc.GetComponent<Rigidbody2D>().gravityScale = gravityStore;
+        //Match Pcs transform position
+        Pc.transform.position = CurrentCheckPoint.transform.position;
+        //Show Pc
+        //Pc.enabled = true;
+        Pc.GetComponent<Renderer>().enabled = true;
+        //spawn Pc 
+        Instantiate(RespawnParticle, CurrentCheckPoint.transform.position, CurrentCheckPoint.transform.rotation);
     }
+}
