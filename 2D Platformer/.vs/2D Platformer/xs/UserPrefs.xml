@@ -1,6 +1,6 @@
 ﻿<Properties StartupConfiguration="{1EDD9D92-DC19-2903-8FF9-21A6835B19EC}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/LevelManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/killplayer.cs">
     <Files>
       <File FileName="Assets/scripts/PlayerControl.cs" Line="1" Column="1" />
       <File FileName="Assets/scripts/deathbox.cs" Line="11" Column="1" />
@@ -8,7 +8,8 @@
       <File FileName="Assets/scripts/CoinPickup.cs" Line="14" Column="17" />
       <File FileName="Assets/scripts/Enemy_Patrol.cs" Line="1" Column="1" />
       <File FileName="Assets/scripts/Checkpoint.cs" Line="26" Column="1" />
-      <File FileName="Assets/scripts/LevelManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/LevelManager.cs" Line="62" Column="1" />
+      <File FileName="Assets/scripts/killplayer.cs" Line="12" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

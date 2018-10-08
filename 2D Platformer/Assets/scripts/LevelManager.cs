@@ -6,7 +6,7 @@ public class LevelManager : MonoBehaviour
 {
 
     public GameObject CurrentCheckPoint;
-    private Rigidbody2D Pc;
+    public Rigidbody2D Pc;
 
     //particles 
     public GameObject DeathParticle;
@@ -25,7 +25,7 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
-        Pc = FindObjectOfType<Rigidbody2D>();
+        //Pc = FindObjectOfType<Rigidbody2D>();
 
     }
     public void RespawnPc()
