@@ -963,11 +963,24 @@ Prefab:
       objectReference: {fileID: 927591289}
     - target: {fileID: 4842528019299312, guid: adb01030abf84438ca0339f808a4ef39, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.288
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4842528019299312, guid: adb01030abf84438ca0339f808a4ef39, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.011
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4279491044502406, guid: adb01030abf84438ca0339f808a4ef39, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4279491044502406, guid: adb01030abf84438ca0339f808a4ef39, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 50622105234033232, guid: adb01030abf84438ca0339f808a4ef39,
+        type: 2}
+      propertyPath: m_Simulated
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: adb01030abf84438ca0339f808a4ef39, type: 2}
@@ -1066,7 +1079,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 738747529}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.88, y: 0.46, z: -1.2978776}
+  m_LocalPosition: {x: -20.82, y: 0.49, z: -1.2978776}
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1885,11 +1898,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e68f13456ff704024abc8d1de7e303fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 0
-  Pc: {fileID: 0}
-  EnemyDeath: {fileID: 0}
+  Speed: 10
+  Pc: {fileID: 2102959229}
+  EnemyDeath: {fileID: 683996737}
   ProjectileParticle: {fileID: 0}
-  PointsForKill: 0
+  PointsForKill: 10
 --- !u!1 &1530690934
 GameObject:
   m_ObjectHideFlags: 0
@@ -2338,11 +2351,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4488447861324214, guid: 1d40cb88184cf4b638fb661729fca23c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -22.76
+      value: -24.21
       objectReference: {fileID: 0}
     - target: {fileID: 4488447861324214, guid: 1d40cb88184cf4b638fb661729fca23c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.6
+      value: 0.08
       objectReference: {fileID: 0}
     - target: {fileID: 4488447861324214, guid: 1d40cb88184cf4b638fb661729fca23c, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2371,6 +2384,16 @@ Prefab:
     - target: {fileID: 1071227497746124, guid: 1d40cb88184cf4b638fb661729fca23c, type: 2}
       propertyPath: m_TagString
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114818257548404292, guid: 1d40cb88184cf4b638fb661729fca23c,
+        type: 2}
+      propertyPath: LevelManager
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114178359386609442, guid: 1d40cb88184cf4b638fb661729fca23c,
+        type: 2}
+      propertyPath: MoveRight
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1d40cb88184cf4b638fb661729fca23c, type: 2}
@@ -2561,6 +2584,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 699b0fdf0f3c64a63ae6630d660026e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!50 &2102959229 stripped
+Rigidbody2D:
+  m_PrefabParentObject: {fileID: 50622105234033232, guid: adb01030abf84438ca0339f808a4ef39,
+    type: 2}
+  m_PrefabInternal: {fileID: 729494478}
 --- !u!1 &2141964954
 GameObject:
   m_ObjectHideFlags: 0
@@ -2702,11 +2730,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4477109887904864, guid: a040e66763cec4a13a2bc1f552ee771e, type: 2}
       propertyPath: m_LocalScale.x
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4477109887904864, guid: a040e66763cec4a13a2bc1f552ee771e, type: 2}
       propertyPath: m_LocalScale.y
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a040e66763cec4a13a2bc1f552ee771e, type: 2}
