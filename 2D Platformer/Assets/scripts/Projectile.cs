@@ -13,6 +13,7 @@ public class Projectile : MonoBehaviour
 
     public int PointsForKill;
 
+   
     // Use this for initialization
     void Start()
     {
@@ -28,18 +29,23 @@ public class Projectile : MonoBehaviour
         GetComponent<Rigidbody2D>().velocity = new Vector2(Speed, GetComponent<Rigidbody2D>().velocity.y);
     }
 
+
     void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.tag == "Enemy")
+    { 
+        if(other.tag == "Enemy")
         {
             Instantiate(EnemyDeath, other.transform.position, other.transform.rotation);
             Destroy(other.gameObject);
             Score_Manager.AddPoints(PointsForKill);
-        }
-        Instantiate(ProjectileParticle, transform.position, transform.rotation);
-        Destroy(gameObject);
+            Destroy(gameObject); 
 
+        }
+        if(other.tag == "Wall")
+        {
+            Destroy(gameObject);
+        }
     }
+
 
 
 }
