@@ -26,11 +26,10 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
-        Pc = GameObject.Find("Pc").GetComponent<Rigidbody2D>();
-        PC2 = GameObject.Find("Pc");
+     //Pc = FindObjectOfType<Rigidbody2D>
 
     }
-    public void RespawnPc()
+    public void RespawnPlayer()
     {
         StartCoroutine("RespawnPlayerCo");
     }

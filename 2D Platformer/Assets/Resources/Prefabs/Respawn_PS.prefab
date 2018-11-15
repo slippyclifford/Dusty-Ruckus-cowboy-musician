@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 198778499288741068}
   - component: {fileID: 199959502764284886}
   m_Layer: 0
-  m_Name: Particle System
+  m_Name: Respawn_PS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

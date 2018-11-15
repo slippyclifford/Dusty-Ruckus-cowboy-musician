@@ -19,9 +19,13 @@ public class Projectile : MonoBehaviour
     void Start()
     {
         Pc = GameObject.Find("Pc");
+
         EnemyDeath = Resources.Load("Prefabs/Death_P5") as GameObject;
+
         ProjectileParticle = Resources.Load("Prefabs/Respawn_P5") as GameObject;
+
         // Pc = FindObjectOfType<Rigidbody2D>();
+
         if (Pc.transform.localScale.x < 0)
             Speed = -Speed;
 
@@ -47,13 +51,16 @@ public class Projectile : MonoBehaviour
         }
 
         // Instantiate(ProjectileParticle, transform.position, transform.rotation);
-            Destroy(gameObject);
+        Destroy(gameObject);
+
         }
+   
+
 
         void OnCollisionEnter2D(Collision2D other)
         {
             Instantiate(ProjectileParticle, transform.position, transform.rotation);
-            Destroy(gameObject);
+            Destroy (gameObject);
 
         }
     }
