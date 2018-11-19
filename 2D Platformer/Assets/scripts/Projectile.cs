@@ -20,9 +20,9 @@ public class Projectile : MonoBehaviour
     {
         Pc = GameObject.Find("Pc");
 
-        EnemyDeath = Resources.Load("Prefabs/Death_P5") as GameObject;
+        EnemyDeath = Resources.Load("Prefabs/Death_PS") as GameObject;
 
-        ProjectileParticle = Resources.Load("Prefabs/Respawn_P5") as GameObject;
+        ProjectileParticle = Resources.Load("Prefabs/Shoot_PS") as GameObject;
 
         // Pc = FindObjectOfType<Rigidbody2D>();
 

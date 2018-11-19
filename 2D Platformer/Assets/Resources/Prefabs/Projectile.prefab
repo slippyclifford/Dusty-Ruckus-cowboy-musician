@@ -93,8 +93,7 @@ MonoBehaviour:
   TimeOut: 5
   Pc: {fileID: 1117496844149986, guid: adb01030abf84438ca0339f808a4ef39, type: 2}
   EnemyDeath: {fileID: 1218477855610420, guid: f4206d907ff904fbcbc787b583fd62c0, type: 2}
-  ProjectileParticle: {fileID: 1461315864335432, guid: b072d0655bb214da8a8b3ca511d1324f,
-    type: 2}
+  ProjectileParticle: {fileID: 0}
   PointsForKill: 10
 --- !u!212 &212067175010545554
 SpriteRenderer:
