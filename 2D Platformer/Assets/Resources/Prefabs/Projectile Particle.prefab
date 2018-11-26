@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 198250991655844858}
   - component: {fileID: 199615286041022334}
   m_Layer: 0
-  m_Name: bullet particle
+  m_Name: Projectile Particle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

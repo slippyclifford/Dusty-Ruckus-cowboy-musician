@@ -10,17 +10,17 @@ public class LevelManager : MonoBehaviour
     public GameObject PC2;
 
     //particles 
-    public GameObject DeathParticle;
-    public GameObject RespawnParticle;
+    public GameObject Death_PS;
+    public GameObject Respawn_PS;
 
     //Respawn Delay
-    public float respawnDelay;
+    public float RespawnDelay;
 
     //Point Penalty on Death
     public int pointPenaltyOnDeath;
 
     // Store Gravity Value
-    private float gravityStore;
+    private float GravityStore;
 
     // Use this for initialization
 
@@ -36,23 +36,23 @@ public class LevelManager : MonoBehaviour
     public IEnumerator RespawnPlayerCo()
     {
         //Generate Death Particle
-        Instantiate(DeathParticle, Pc.transform.position, Pc.transform.rotation);
+        Instantiate(Death_PS, Pc.transform.position, Pc.transform.rotation);
         //Hide Player
         //Pc.enabled = false;
         PC2.SetActive(false);
         Pc.GetComponent<Renderer>().enabled = false;
         //Gravity Reset 
-        gravityStore = Pc.GetComponent<Rigidbody2D>().gravityScale;
+        GravityStore = Pc.GetComponent<Rigidbody2D>().gravityScale;
         Pc.GetComponent<Rigidbody2D>().gravityScale = 0f;
         Pc.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         //Point Penalty 
         Score_Manager.AddPoints(-pointPenaltyOnDeath);
         //Debug Message
-        Debug.Log("Player Respawn");
+        Debug.Log("Pc Respawn");
              //Respawn Delay
-             yield return new WaitForSeconds(respawnDelay);
+             yield return new WaitForSeconds(RespawnDelay);
         //Gravity Restore
-        Pc.GetComponent<Rigidbody2D>().gravityScale = gravityStore;
+        Pc.GetComponent<Rigidbody2D>().gravityScale = GravityStore;
         //Match Pcs transform position
         Pc.transform.position = CurrentCheckPoint.transform.position;
         //Show Pc
@@ -60,6 +60,6 @@ public class LevelManager : MonoBehaviour
         PC2.SetActive(true);
         Pc.GetComponent<Renderer>().enabled = true;
         //spawn Pc 
-        Instantiate(RespawnParticle, CurrentCheckPoint.transform.position, CurrentCheckPoint.transform.rotation);
+        Instantiate(Respawn_PS, CurrentCheckPoint.transform.position, CurrentCheckPoint.transform.rotation);
     }
 }
