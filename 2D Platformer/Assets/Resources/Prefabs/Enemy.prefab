@@ -185,7 +185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveSpeed: 3
-  MoveRight: 0
+  MoveRight: 1
   WallCheck: {fileID: 4399382541112674}
   WallCheckRadius: 0.1
   WhatIsWall:
