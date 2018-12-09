@@ -14,6 +14,7 @@ TextureImporter:
     21300018: build_atlas_9
     21300020: build_atlas_10
     21300022: build_atlas_11
+    21300024: build_atlas_12
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -322,13 +323,33 @@ TextureImporter:
         width: 157
         height: 116
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 988999304f76444dab1ae878f1b6fcaa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: build_atlas_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 416
+        width: 95
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0dda57a834c08543a381714812f27f1
       vertices: []
       indices: 
       edges: []
