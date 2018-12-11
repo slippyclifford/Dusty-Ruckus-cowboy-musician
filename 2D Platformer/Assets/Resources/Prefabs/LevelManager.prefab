@@ -35,7 +35,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1858921991084288}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.32462302, y: 1.597459, z: -0.23921463}
+  m_LocalPosition: {x: -5.49, y: 0.66, z: -0.23921463}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -63,11 +63,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bf8b328782334a3dbcbb50d6af5c63c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentCheckPoint: {fileID: 1640526455382986, guid: de1ec43dff08e4e58a59c684c3fd2052,
-    type: 2}
+  CurrentCheckPoint: {fileID: 0}
   Pc: {fileID: 0}
   PC2: {fileID: 0}
   Death_PS: {fileID: 1218477855610420, guid: f4206d907ff904fbcbc787b583fd62c0, type: 2}
   Respawn_PS: {fileID: 1461315864335432, guid: b072d0655bb214da8a8b3ca511d1324f, type: 2}
   RespawnDelay: 1
-  pointPenaltyOnDeath: 100
+  pointPenaltyOnDeath: 0
