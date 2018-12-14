@@ -5622,6 +5622,11 @@ Prefab:
       propertyPath: Projectile
       value: 
       objectReference: {fileID: 1987156451}
+    - target: {fileID: 114028809594010686, guid: adb01030abf84438ca0339f808a4ef39,
+        type: 2}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1240146245}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: adb01030abf84438ca0339f808a4ef39, type: 2}
   m_IsPrefabParent: 0
@@ -32837,6 +32842,11 @@ Transform:
 --- !u!1 &1240146244 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1117496844149986, guid: adb01030abf84438ca0339f808a4ef39,
+    type: 2}
+  m_PrefabInternal: {fileID: 168223607}
+--- !u!95 &1240146245 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 95971386137997854, guid: adb01030abf84438ca0339f808a4ef39,
     type: 2}
   m_PrefabInternal: {fileID: 168223607}
 --- !u!114 &1240146246 stripped
