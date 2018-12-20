@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 114028809594010686}
   - component: {fileID: 114488735208923452}
   - component: {fileID: 95971386137997854}
+  - component: {fileID: 61113185448007248}
   m_Layer: 0
   m_Name: Pc
   m_TagString: Untagged
@@ -69,7 +70,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1117496844149986}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.94, y: -0.7, z: -1}
+  m_LocalPosition: {x: -8.66, y: -1.59, z: -1}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children:
   - {fileID: 4613211669831826}
@@ -123,6 +124,31 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!61 &61113185448007248
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1117496844149986}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.05}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.13, y: 0.28}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.13, y: 0.05}
+  m_EdgeRadius: 0
 --- !u!61 &61380183109552458
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -135,7 +161,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.04, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -146,7 +172,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.1, y: 0.25}
+  m_Size: {x: 0.06, y: 0.25}
   m_EdgeRadius: 0
 --- !u!95 &95971386137997854
 Animator:
@@ -184,6 +210,7 @@ MonoBehaviour:
   WhatIsGround:
     serializedVersion: 2
     m_Bits: 256
+  animator: {fileID: 95971386137997854}
 --- !u!114 &114488735208923452
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -196,7 +223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FirePoint: {fileID: 4842528019299312}
-  Projectile: {fileID: 0}
+  Projectile: {fileID: 1796253864846770, guid: a040e66763cec4a13a2bc1f552ee771e, type: 2}
 --- !u!212 &212466685395947354
 SpriteRenderer:
   m_ObjectHideFlags: 1
